@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">ProcessTransaction</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">My Cards</string>
+    <string name="title_nav_home">Home</string>
+    <string name="title_dashboard">Transactions</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_checkout">CheckoutActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="title_checkout">Checkout</string>
+    <string name="title_cards">List of cards</string>
+    <string name="title_resume_transaction">Resume transaction</string>
+    <string name="title_payment_methods">Payment Methods</string>
+    <string name="title_add_payment_methods">Add Payment Methods</string>
+    <string name="add_new_cards">Add new cards</string>
+    <string name="empty_number_card">XXXX XXXX XXXX XXXX</string>
+    <string name="valid_thru">VALID THRU</string>
+    <string name="database_name">evertec_local_db</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="error_name">Required name field</string>
+    <string name="error_surname">Required surname field</string>
+    <string name="error_email">Required email field</string>
+    <string name="error_credit_number">Required number field</string>
+    <string name="expiration_date_args">"%s / "</string>
+    <string name="error_month_valid">Invalid month</string>
+    <string name="remove_info">"Fake delete item product "</string>
+    <string name="empty_value">1</string>
+    <string name="fake_remove_all">Fake remove all items</string>
+    <string name="pay_now">Pay now COP %s</string>
+    <string name="price_cop_value">COP %s</string>
+    <string name="remove_all">Remove all</string>
+    <string name="select_all">Select all</string>
+    <string name="custom_text_item">Nike Official Store</string>
+    <string name="delivered_to">Delivered to:</string>
+    <string name="change_shipping_options">Change Shipping Options</string>
+    <string name="location_args">Location: %s</string>
+    <string name="expedition">Expedition: JNE Express</string>
+    <string name="cost_cop">Cost: COP %s</string>
+    <string name="change_payment_method">Change Payment Method</string>
+    <string name="installments">Installments</string>
+    <string name="accept">Accept</string>
+    <string name="cant_execute_transaction">Verify the transaction information and try again</string>
+    <string name="from_checkout">checkout</string>
+    <string name="detail_arg">%d x %s</string>
+    <string name="franchise_args">%s **** %s</string>
+    <string name="args_info">%d x %s</string>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/checkoutFragment">
+
+    <fragment
+        android:id="@+id/checkoutFragment"
+        android:name="com.evertecinc.processtransaction.presentation.checkout.CheckoutFragment"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_checkoutFragment_to_paymentMethodFragment"
+            app:destination="@id/paymentMethodFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_checkoutFragment_to_resumeTransactionFragment"
+            app:destination="@id/resumeTransactionFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/paymentMethodFragment"
+        android:name="com.evertecinc.processtransaction.presentation.cards.PaymentMethodFragment"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_paymentMethodFragment_to_addCardFragment"
+            app:destination="@id/AddCardFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/fade_out" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/AddCardFragment"
+        android:name="com.evertecinc.processtransaction.presentation.cards.AddCardFragment"
+        tools:layout="@layout/fragment_add_card" />
+
+    <fragment
+        android:id="@+id/resumeTransactionFragment"
+        android:name="com.evertecinc.processtransaction.presentation.checkout.ResumeTransactionFragment"
+        tools:layout="@layout/fragment_resume_transaction" />
+
+</navigation>
