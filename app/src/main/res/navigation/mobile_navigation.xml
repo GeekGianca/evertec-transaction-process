@@ -11,6 +11,11 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
+        android:id="@+id/resumeTransactionFragment"
+        android:name="com.evertecinc.processtransaction.presentation.checkout.ResumeTransactionFragment"
+        tools:layout="@layout/fragment_resume_transaction" />
+
+    <fragment
         android:id="@+id/navigation_dashboard"
         android:name="com.evertecinc.processtransaction.presentation.main.DashboardFragment"
         tools:layout="@layout/fragment_dashboard" />

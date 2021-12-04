@@ -89,6 +89,7 @@ class CheckoutFragment : Fragment() {
                     binding.quantityItem.setText("${it.productEntity.quantity}")
 
                     if (it.tokenCreditCard == null) {
+                        isInstallmentsAttached = false
                         binding.typeCardCredit.setImageDrawable(
                             ContextCompat.getDrawable(
                                 requireContext(),

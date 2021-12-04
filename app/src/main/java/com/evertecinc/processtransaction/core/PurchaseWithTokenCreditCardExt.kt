@@ -26,14 +26,6 @@ fun PurchaseWithTokenCreditCardRelation.toTransaction(
         reference = this.productEntity.reference
     )
     val instrument = Instrument(
-        /*token = TokenModel(
-            franchise = this.tokenCreditCard.franchise,
-            franchiseName = this.tokenCreditCard.franchiseName,
-            lastDigits = this.tokenCreditCard.lastDigits,
-            subtoken = this.tokenCreditCard.subToken,
-            token = this.tokenCreditCard.token,
-            validUntil = this.tokenCreditCard.validUntil
-        )*/
         card = CardModel(
             cvv = this.tokenCreditCard.cvv,
             expiration = this.tokenCreditCard.validUntil.validThuFormat(),

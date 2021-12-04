@@ -45,4 +45,5 @@
     <string name="detail_arg">%d x %s</string>
     <string name="franchise_args">%s **** %s</string>
     <string name="args_info">%d x %s</string>
+    <string name="installments_args">Installments: %d</string>
 </resources>

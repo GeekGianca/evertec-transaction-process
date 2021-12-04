@@ -14,7 +14,7 @@ import java.util.*
 val auth = AuthModel(BuildConfig.AUTH, Util.nonceBase64, Util.seed, Util.tranKeyBase64)
 
 fun String.asFormatUser(): String {
-    val formatter = SimpleDateFormat("yyyy-MM-dd'T'HH:mmZ", Locale.getDefault())
+    val formatter = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ", Locale.getDefault())
     val formatUSer = SimpleDateFormat("dd MMM yyyy", Locale.getDefault())
     val dateFormat = try {
         formatter.parse(this)

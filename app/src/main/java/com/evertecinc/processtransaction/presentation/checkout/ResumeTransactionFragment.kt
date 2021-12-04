@@ -77,10 +77,10 @@ class ResumeTransactionFragment : BottomSheetDialogFragment() {
                     ContextCompat.getColor(requireContext(), R.color.success)
                 }
                 Constants.REJECTED -> {
-                    ContextCompat.getColor(requireContext(), R.color.success)
+                    ContextCompat.getColor(requireContext(), R.color.error)
                 }
                 else -> {
-                    ContextCompat.getColor(requireContext(), R.color.success)
+                    ContextCompat.getColor(requireContext(), R.color.checkout)
                 }
             }
             binding.status.setTextColor(color)
