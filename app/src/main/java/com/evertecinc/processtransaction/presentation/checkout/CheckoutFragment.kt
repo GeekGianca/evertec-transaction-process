@@ -79,6 +79,7 @@ class CheckoutFragment : Fragment() {
         viewModel.viewSate.observe(viewLifecycleOwner) { viewState ->
             if (viewState != null) {
                 viewState.itemView.product?.let {
+                    uIController.onDisplayProgress(false)
                     priceUnit = it.productEntity.unitPrice
                     binding.productItemName.text = it.productEntity.productName
                     binding.productItemPrice.text = getString(
@@ -260,6 +261,11 @@ class CheckoutFragment : Fragment() {
         totalPrice = (quantity * priceUnit) + priceShipment
         binding.buttonPay.text =
             getString(R.string.pay_now, Commons.formatDecimal.format(totalPrice))
+    }
+
+    override fun onResume() {
+        super.onResume()
+        uIController.onDisplayProgress(false)
     }
 
     override fun onDestroyView() {

@@ -266,6 +266,7 @@ class PlaceToPayRepositoryImpl @Inject constructor(
             override suspend fun updateCache(networkObj: ProcessTransactionResModel) {
                 try {
                     val entity = txMapper.toEntity(networkObj)
+                    entity.installments = model.instrument.card!!.installments
                     val txId = transactionDao.insert(entity)
                     //If there are more than 1 product then it iterates over
                     // the list of details, in this case of technical test
